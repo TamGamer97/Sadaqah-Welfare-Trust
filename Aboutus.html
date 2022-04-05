@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="icon" type="image/x-icon" href="/Assets/Logo.jpg">
+</head>
+<body id="body">
+    
+    <img id="bgimg-1" src="/Assets/bgdesign.png"  style="object-fit: cover; width: 100vw; height: 100vh; position: absolute; opacity: 0.6; " >
+    
+    <div id="header" style="position: absolute; background-color: #005BAA; width: 100vw; height: 80px;">
+        <div id="pagesList" style="display: flex; position: absolute; right: 0px;">
+            <h1 onclick=" location.href = '/index.html' " style="color: white; margin-left: 15px; margin-right: 15px; font-size: 17px; margin-top: 28px; opacity: 0.5;">Home</h1>
+            <h1 onclick=" location.href = '/aboutus.html' " style="color: white; margin-left: 15px; margin-right: 15px; font-size: 17px; margin-top: 28px; opacity: 1;">About us</h1>
+            <h1 style="color: white; margin-left: 15px; margin-right: 15px; font-size: 17px; margin-top: 28px; opacity: 0.5;">Contact</h1>
+            <h1 style="color: white; margin-left: 15px; margin-right: 15px; font-size: 17px; margin-top: 28px; opacity: 0.5;">Our Work</h1>
+            <h1 style="color: white; margin-left: 15px; margin-right: 15px; font-size: 17px; margin-top: 28px; opacity: 0.5;">Get Involved</h1>
+            <h1 style="color: white; margin-left: 15px; margin-right: 30px; font-size: 17px; margin-top: 28px; opacity: 0.5;">Gallery</h1>
+        </div>
+
+        <div id="subtitle" style="width: 300px; height: 40px; background-color: white; margin-top: 20px; margin-left: 20px; border-radius: 10px; display: flex; justify-content: center;">
+            <h1 class="boldTxt" style="color: #005BAA; margin-left: 15px; margin-right: 15px; font-size: 16px; margin-top: 12px;">HUMANITY IS ABOVE ALL THINGS</h1>
+        </div>
+
+        <div onclick="openMenu()" id="menuIcon" style="position: absolute; top: 20px; right: 10px; width: 40px; height: 40px; background-color: white; display: none; flex-direction: column; border-radius: 3px;">
+            <div style="width: 70%; height: 2px; background-color: #2d71ad; margin-top: 8.5px; margin-left: 6px;"></div>
+            <div style="width: 70%; height: 2px; background-color: #2d71ad; margin-top: 8.5px; margin-left: 6px;"></div>
+            <div style="width: 70%; height: 2px; background-color: #2d71ad; margin-top: 8.5px; margin-left: 6px;"></div>
+        </div>
+
+    </div>
+
+    <div style="position: absolute; left: 200px; margin-top: 50px;">
+        <img id="logoImg" src="/Assets/swtTransparentBg.png" style="object-fit: contain; width: 250px; height: 250px; position: relative; top: 120px; border: none rgba(0, 0, 0, 0.6)  ">
+    </div>
+
+    <div id="titleAbout" style="display: none; justify-content: center; position: relative; top: 100px;">
+        <div style="width: 150px; height: 40px; background-color: #005BAA; display: flex; justify-content: center; border-radius: 10px; align-items: center;">
+            <h1 style="color: white; position: absolute; font-size: 20px; color: white;">About Us </h1>
+        </div>
+    </div>
+
+    <div id="parentAboutInfo">
+        <div id="aboutInfo" class="biggerScreen">
+            <div style="display: flex; justify-content: center; align-items: center; height: 230px;">
+                <div id="txtPara" style="background-color: none; width: 90%; height: 200px; display: flex; justify-content: center; align-items: center;">
+        
+                    <h1 style="color: white; font-size: 20px; text-align: center;">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum  has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        printer took a galley of type and scrambled it to make a type specimen book. It has.
+                    </h1>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="menu" style="display: none; width: 100vw; height: 100vh; background-color: #005BAA; position: absolute; top: 0px; left: 0px; opacity: 0.9; justify-content: center; flex-direction: column;">
+
+        <h1 style="text-align: center; color: white; font-size: 30px; position: relative; top: -30px; text-decoration-line: underline;">Menu</h1>
+
+        <h1 onclick=" location.href = '/index.html' " style="text-align: center; color: white; font-size: 20px; position: relative; top: -30px; opacity: 1;">Home</h1>
+
+        <h1 onclick=" location.href = '/aboutus.html' " style="text-align: center; color: white; font-size: 20px; position: relative; top: -30px; opacity: 0.8;">About us</h1>
+
+        <h1 onclick=" location.href = '/' " style="text-align: center; color: white; font-size: 20px; position: relative; top: -30px; opacity: 1;">Contact</h1>
+
+        <h1 onclick=" location.href = '/' " style="text-align: center; color: white; font-size: 20px; position: relative; top: -30px; opacity: 1;">Our Work</h1>
+
+        <h1 onclick=" location.href = '/' " style="text-align: center; color: white; font-size: 20px; position: relative; top: -30px; opacity: 1;">Get Involved</h1>
+
+        <h1 onclick=" location.href = '/' " style="text-align: center; color: white; font-size: 20px; position: relative; top: -30px; opacity: 1;">Gallery</h1>
+    
+    </div>
+
+    <div id="footer" style="position: absolute; bottom: 0px; background-color: #005BAA; height: 80px; width: 100vw">
+
+    </div>
+
+</body>
+<script>
+    if(window.innerWidth < 1200)
+    {
+        document.getElementById('logoImg').style.display = "none"
+
+        document.getElementById('aboutInfo').className = "smallerScreen"
+        document.getElementById('parentAboutInfo').className = "smallerScreenParent"
+
+        document.getElementById('titleAbout').style.display = "flex"
+
+    }
+
+    if(window.innerWidth < 700)
+    {
+        // smallerScreen 300
+        document.getElementById('aboutInfo').style.width = "350px"
+    }
+
+
+    if(window.innerWidth < 912)
+    {
+        document.getElementById('pagesList').style.display = "none"
+
+        document.getElementById('subtitle').style.marginLeft = "10px"
+
+        document.getElementById('menuIcon').style.display = "flex"
+    }
+
+    function vhToPixels (vh) {
+        return Math.round(window.innerHeight / (100 / vh));
+    }
+
+    function openMenu()
+    {
+        document.getElementById('body').style.overflowY = "hidden"
+        document.getElementById('menu').style.display = "flex"
+    }
+</script>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@800&display=swap');
+    body{
+        margin: 0px;
+        background-repeat: repeat-y;
+        overflow-x: hidden;
+        background-color: #f6f5fa;
+    }
+    h1{
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    .unselectable {
+        -moz-user-select: -moz-none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+    .mTop {
+        margin-top: 20px; margin-bottom: 20px; 
+        position: absolute;
+        left: 50%;
+        margin-left: -100px;
+    }
+    .mRight {
+        margin-right: 20px; margin-left: 20px; 
+    }
+    .biggerScreen{
+        position: absolute;
+        right: 150px;
+        top: 180px;
+        background-color: #005BAA;
+        width: 500px;
+        height: 230px;
+        border-radius: 20px
+    }
+    .smallerScreen{
+        position: relative;
+        margin-top: -190px;
+        background-color: #005BAA;
+        width: 500px;
+        height: 230px;
+        border-radius: 20px;
+    }
+    .smallerScreenParent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+</style>
