@@ -15,27 +15,27 @@
     <div id="header" style="position: absolute; background-color: #005BAA; width: 100vw; height: 80px;">
         <div id="pagesList" style="display: flex; position: absolute; right: 0px;">
 
-            <div style="opacity: 1; background-color: white; width: 65px; height: 27px; margin-top: 24px; border-radius: 2px; margin-left: 10px; margin-right: 10px;">
+            <div class="hoverAspect" style=" background-color: white; width: 65px; height: 27px; margin-top: 24px; border-radius: 2px; margin-left: 10px; margin-right: 10px;">
                 <h1 onclick=" location.href = '/' " style="color: #005BAA; text-align: center; font-size: 17px; margin-top: 5px; opacity: 1;">Home</h1>
             </div>
 
-            <div style="opacity: 0.65; background-color: white; width: 85px; height: 27px; margin-top: 24px; border-radius: 2px; margin-left: 10px; margin-right: 10px;">
+            <div class="hoverAspect" style="opacity: 0.65; background-color: white; width: 85px; height: 27px; margin-top: 24px; border-radius: 2px; margin-left: 10px; margin-right: 10px;">
                 <h1 onclick=" location.href = '/aboutus' " style="color: #005BAA; text-align: center; font-size: 17px; margin-top: 5px; opacity: 1;">About us</h1>
             </div>
 
-            <div style="opacity: 0.65; background-color: white; width: 80px; height: 27px; margin-top: 24px; border-radius: 2px; margin-left: 10px; margin-right: 10px;">
+            <div class="hoverAspect" style="opacity: 0.65; background-color: white; width: 80px; height: 27px; margin-top: 24px; border-radius: 2px; margin-left: 10px; margin-right: 10px;">
                 <h1 onclick=" location.href = '/contact' " style="color: #005BAA; text-align: center; font-size: 17px; margin-top: 5px; opacity: 1;">Contact</h1>
             </div>
 
-            <div style="opacity: 0.65; background-color: white; width: 100px; height: 27px; margin-top: 24px; border-radius: 2px; margin-left: 10px; margin-right: 10px;">
+            <div class="hoverAspect" style="opacity: 0.65; background-color: white; width: 100px; height: 27px; margin-top: 24px; border-radius: 2px; margin-left: 10px; margin-right: 10px;">
                 <h1 onclick=" location.href = '/ourwork' " style="color: #005BAA; text-align: center; font-size: 17px; margin-top: 5px; opacity: 1;">Our Work</h1>
             </div>
 
-            <div style="opacity: 0.65; background-color: white; width: 130px; height: 27px; margin-top: 24px; border-radius: 2px; margin-left: 10px; margin-right: 10px;">
+            <div class="hoverAspect" style="opacity: 0.65; background-color: white; width: 130px; height: 27px; margin-top: 24px; border-radius: 2px; margin-left: 10px; margin-right: 10px;">
                 <h1 onclick=" location.href = '/getinvolved' " style="color: #005BAA; text-align: center; font-size: 17px; margin-top: 5px; opacity: 1;">Get Involved</h1>
             </div>
 
-            <div style="opacity: 0.65; background-color: white; width: 70px; height: 27px; margin-top: 24px; border-radius: 2px; margin-left: 10px; margin-right: 40px;">
+            <div class="hoverAspect" style="opacity: 0.65; background-color: white; width: 70px; height: 27px; margin-top: 24px; border-radius: 2px; margin-left: 10px; margin-right: 40px;">
                 <h1 onclick=" location.href = '/gallery' " style="color: #005BAA; text-align: center; font-size: 17px; margin-top: 5px; opacity: 1;">Gallery</h1>
             </div>
 <!--             
@@ -47,7 +47,7 @@
         </div>
 
         <div id="subtitle" style="width: 300px; height: 40px; background-color: white; margin-top: 20px; margin-left: 20px; border-radius: 10px; display: flex; justify-content: center;">
-            <h1 class="boldTxt" style="color: #005BAA; margin-left: 15px; margin-right: 15px; font-size: 16px; margin-top: 12px;">HUMANITY IS ABOVE ALL THINGS</h1>
+            <h1 class="boldTxt" id="boldTxt" style="color: #005BAA; margin-left: 15px; margin-right: 15px; font-size: 16px; margin-top: 12px;">HUMANITY IS ABOVE ALL THINGS</h1>
         </div>
 
         <div onclick="openMenu()" id="menuIcon" style="position: absolute; top: 20px; right: 10px; width: 40px; height: 40px; background-color: white; display: none; flex-direction: column; border-radius: 3px;">
@@ -65,7 +65,7 @@
     <img id="kidSemi" src="/Assets/kidsemiglow.png" style="object-fit: contain; width: 500px; height: 500px; position: absolute; left: -250px; top: 120px">
     
     <div style="position: relative; top: 60px; display: flex; justify-content: center;">
-        <h1 style="color: #005BAA; font-size: 20px; font-weight: bold; text-align: center; width: 850px;">
+        <h1 id="openingTxt" style="color: #005BAA; font-size: 20px; font-weight: bold; text-align: center; width: 850px; height: 500px; padding: 10px;"> 
             Sadaqah Welfare Trust aims to alleviate poverty around the globe, and make this world a better place for the less fortunate
             <br><br>
             Prophet Muhammad (PBUH) stated: "A Man is not a beliver who fills his stomach while his neighbour is hungry"
@@ -85,7 +85,7 @@
 
     <div style="position: absolute;" class="unselectable">
 
-        <img id="bgimg-2" src="/Assets/fullsizebgdesign.png"  style="object-fit: cover; width: 100vw; height: 100vh; position: relative; opacity: 0.6; top: 267px;" >
+        <img id="bgimg-2" src="/Assets/bgdesign.png"  style="object-fit: cover; width: 100vw; height: 100vh; position: absolute; top: 310px; opacity: 0.6; " >
     </div>
 
 
@@ -173,8 +173,8 @@
     </div>
 
 
-    <div id="footer" style="position: relative; top: 41px; background-color: #005BAA; height: 80px; width: 100vw">
-        <div style="display: flex; flex-direction: row; align-items: center; height: 80px; margin-left: 20px; gap: 7px">
+    <div id="footer" style="position: relative; top: 182px; background-color: #005BAA; height: 80px; width: 100vw">
+        <div id="iconsDiv" style="display: flex; flex-direction: row; align-items: center; height: 80px; margin-left: 20px; gap: 7px">
 
             <img src="/Assets/ytIcon.png" width="30px;">
             <img src="/Assets/fbIcon.png" width="30px; ">
@@ -183,9 +183,9 @@
             <img src="/Assets/twitterIcon.png" width="30px; ">
             <img src="/Assets/snapchatIcon.png" width="30px; ">
 
-            <h1 style="color: white; font-size: 23px; margin-left: 20px;">Sadaqah Welfare Trust</h1>
+            <h1 id="footerTxt" style="color: white; font-size: 23px; margin-left: 20px;">Sadaqah Welfare Trust</h1>
 
-            <div id="subtitle" style="width: 300px; height: 40px; background-color: white; margin-top: 0px; margin-left: 20px; border-radius: 10px; display: flex; justify-content: center; position: absolute; right: 50px;">
+            <div id="subtitle-footer" style="width: 300px; height: 40px; background-color: white; margin-top: 0px; margin-left: 20px; border-radius: 10px; display: flex; justify-content: center; position: absolute; right: 50px;">
                 <h1 class="boldTxt" style="color: #005BAA; margin-left: 15px; margin-right: 15px; font-size: 16px; margin-top: 12px;">HUMANITY IS ABOVE ALL THINGS</h1>
             </div>
 
@@ -196,15 +196,27 @@
 </body>
 <script>
 
-    document.getElementById('bgimg-2').style.top = JSON.parse(vhToPixels(100)) - 428 + "px"
+    document.getElementById('bgimg-2').style.top = (window.innerHeight - 914) + 65 + "px"
 
-    document.getElementById('dnBtn').style.top = JSON.parse(vhToPixels(100)) - 428 - 150 + "px"
+    document.getElementById('dnBtn').style.top = (window.innerHeight - 914) + 40 + "px"
 
     document.getElementById('cnBtn').style.top = JSON.parse(vhToPixels(100)) - 428 + 40 + "px"
 
     document.getElementById('colnBtns').style.marginTop = JSON.parse(vhToPixels(100)) - 600 + "px"
 
-    if(window.innerWidth < 1000)
+    if(window.innerWidth < 1315)
+    {
+        // make para text smaller
+        document.getElementById('openingTxt').style.width = 750 + "px"
+    }
+
+    if(window.innerWidth < 1200)
+    {
+        // make para text smaller
+        document.getElementById('openingTxt').style.width = 650 + "px"
+    }
+
+    if(window.innerWidth < 1097)
     {
         document.getElementById('kidSemi').style.display = "none"
         
@@ -213,9 +225,14 @@
         document.getElementById('subtitle').style.marginLeft = "10px"
 
         document.getElementById('menuIcon').style.display = "flex"
+
+        document.getElementById('subtitle-footer').style.display = "none"
+        document.getElementById('footerTxt').style.display = "none"
+        document.getElementById('iconsDiv').style.justifyContent = "center"
+        document.getElementById('iconsDiv').style.marginLeft = "0px"
     }
 
-    if(window.innerWidth < 400)
+    if(window.innerWidth < 450)
     {
         document.getElementById('cnBtn').style.width = 300 + "px"
         document.getElementById('cnBtnTxt').style.fontSize = 30 + "px"
@@ -235,14 +252,20 @@
 
         document.getElementById('colnBtns').childNodes[1].style.marginTop = -70 + "px"
 
+        document.getElementById('subtitle').style.width = 260 + "px"
+        document.getElementById('boldTxt').style.marginLeft = 5 + "px"
+        document.getElementById('boldTxt').style.marginRight = 5 + "px"
+        document.getElementById('boldTxt').style.fontSize = 15 + "px"
+
+
     }
 
-    if((JSON.parse(vhToPixels(100)) - 428) >= 220)
-    {
-        document.getElementById('footer').style.top = (JSON.parse(vhToPixels(100)) - 428) - 220 + "px"
-    }else{
-        document.getElementById('footer').style.top = 220 - (JSON.parse(vhToPixels(100)) - 428) + "px"
-    }
+    // if((JSON.parse(vhToPixels(100)) - 428) >= 220)
+    // {
+    //     document.getElementById('footer').style.top = (JSON.parse(vhToPixels(100)) - 428) - 220 + "px"
+    // }else{
+    //     document.getElementById('footer').style.top = 220 - (JSON.parse(vhToPixels(100)) - 428) + "px"
+    // }
 
 
     // alert(JSON.parse(vhToPixels(100)) - 428)
@@ -291,5 +314,10 @@
     }
     .mRight {
         margin-right: 20px; margin-left: 20px; 
+    }
+    .hoverAspect:hover {
+        cursor: pointer;
+        opacity: 0.8 !important;
+        background-color: red;
     }
 </style>
