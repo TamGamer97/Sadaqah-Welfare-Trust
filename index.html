@@ -75,9 +75,9 @@
     </div>
 
 
-    <div style="display: flex; justify-content: center;">
+    <div id="dnDiv" style="display: flex; justify-content: center; margin-top: 80px;">
 
-        <div id="dnBtn" style="width: 200px; height: 50px; background-color: #005BAA; display: flex; justify-content: center; align-items: center; border-radius: 10px; position: relative; top: 250px; ">
+        <div id="dnBtn" style="width: 200px; height: 50px; background-color: #005BAA; display: flex; justify-content: center; align-items: center; border-radius: 10px; position: relative; margin-top: 20px; ">
             <h1 style="color: white; font-size: 17px; font-weight: bold; text-transform: uppercase;">Donate Now</h1>
         </div>
 
@@ -230,6 +230,27 @@
         document.getElementById('footerTxt').style.display = "none"
         document.getElementById('iconsDiv').style.justifyContent = "center"
         document.getElementById('iconsDiv').style.marginLeft = "0px"
+    }
+
+    if(window.innerWidth < 650)
+    {
+        document.getElementById('dnDiv').style.marginTop = "130px"
+    }
+    if(window.innerWidth < 520)
+    {
+        document.getElementById('dnDiv').style.marginTop = "160px"
+    }
+    if(window.innerWidth < 450)
+    {
+        document.getElementById('dnDiv').style.marginTop = "180px"
+    }
+    if(window.innerWidth < 420)
+    {
+        document.getElementById('dnDiv').style.marginTop = "250px"
+    }
+    if(window.innerWidth < 380)
+    {
+        document.getElementById('dnDiv').style.marginTop = "310px"
     }
 
     if(window.innerWidth < 450)

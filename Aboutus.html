@@ -100,7 +100,7 @@
     
     </div>
 
-    <div id="footer" style="position: relative; top: 844px; background-color: #005BAA; height: 80px; width: 100vw">
+    <div id="footer" style="position: relative; top: 800px; background-color: #005BAA; height: 80px; width: 100vw">
         <div id="iconsDiv" style="display: flex; flex-direction: row; align-items: center; height: 80px; margin-left: 20px; gap: 7px">
 
             <img src="/Assets/ytIcon.png" width="30px;">
@@ -122,7 +122,7 @@
 </body>
 <script>
 
-    document.getElementById('footer').style.top = (window.innerHeight - 85) + "px"
+    document.getElementById('footer').style.top = document.body.scrollHeight + 150+ "px"
 
 
     if(window.innerWidth < 100)
@@ -147,6 +147,11 @@
         document.getElementById('footerTxt').style.display = "none"
         document.getElementById('iconsDiv').style.justifyContent = "center"
         document.getElementById('iconsDiv').style.marginLeft = "0px"
+    }
+
+    if(window.innerWidth < 1300)
+    {
+        document.getElementById('footer').style.bottom = "-40px"
     }
 
     function vhToPixels (vh) {

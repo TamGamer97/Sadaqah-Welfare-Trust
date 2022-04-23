@@ -82,7 +82,7 @@
             <h1 style="font-size: 20px; color: white; text-align: center;">GoFundMe ></h1>
         </div>
         
-        <img src="/Assets/gofundmeLogo.png" width="150px" style="position: relative; top: 213px;">
+        <img id="gofundmeLogo" src="/Assets/gofundmeLogo.png" width="150px" style="position: relative; top: 213px;">
 
     </div>
 
@@ -136,36 +136,36 @@
 
         </div>
 
-        <div id="contactForms-2" style="position: absolute; top: 650px;">
+        <div id="contactForms-2" style="position: absolute; top: 650px; display: none;">
 
             <div style="display: flex; flex-direction: column; margin-top: 70px;">
-                <div style="width: 370px; height: 50px; background-color: white; border: solid black; border-width: 1px; border-radius: 10px; margin-right: 70px;">
+                <div style="width: 300px; height: 50px; background-color: white; border: solid black; border-width: 1px; border-radius: 10px; margin-right: 70px;">
                     <h1 style="font-size: 15px; color: black; margin-top: -25px; ">Name</h1>
-                    <input id="nameInp" type="text" style="outline: none; border: none; width: 370px; height: 47px; background-color: transparent; font-size: 20px; margin-left: 10px;">
+                    <input id="nameInp" type="text" style="outline: none; border: none; width: 270px; height: 47px; background-color: transparent; font-size: 20px; margin-left: 10px;">
                 </div>
     
-                <div id="addMargin" style="width: 370px; height: 50px; background-color: white; border: solid black; border-width: 1px; border-radius: 10px; margin-top: 30px;">
+                <div id="addMargin" style="width: 300px; height: 50px; background-color: white; border: solid black; border-width: 1px; border-radius: 10px; margin-top: 30px;">
                     <h1 style="font-size: 15px; color: black; margin-top: -25px; ">Surname</h1>
-                    <input id="surnameInp" type="text" style="outline: none; border: none; width: 370px; height: 47px; background-color: transparent; font-size: 20px; margin-left: 10px;">
+                    <input id="surnameInp" type="text" style="outline: none; border: none; width: 270px; height: 47px; background-color: transparent; font-size: 20px; margin-left: 10px;">
                 </div>
             </div>
 
             <div style="display: flex; flex-direction: column; margin-top: 50px;">
 
-                <div style="width: 370px; height: 50px; background-color: white; border: solid black; border-width: 1px; border-radius: 10px; margin-right: 70px;">
+                <div style="width: 300px; height: 50px; background-color: white; border: solid black; border-width: 1px; border-radius: 10px; margin-right: 70px;">
                     <h1 style="font-size: 15px; color: black; margin-top: -25px; ">Email</h1>
-                    <input id="emialInp" type="text" style="outline: none; border: none; width: 370px; height: 47px; background-color: transparent; font-size: 20px; margin-left: 10px;">
+                    <input id="emialInp" type="text" style="outline: none; border: none; width: 270px; height: 47px; background-color: transparent; font-size: 20px; margin-left: 10px;">
                 </div>
     
-                <div id="addMargin-2" style="width: 370px; height: 50px; background-color: white; border: solid black; border-width: 1px; border-radius: 10px; margin-top: 30px;">
+                <div id="addMargin-2" style="width: 300px; height: 50px; background-color: white; border: solid black; border-width: 1px; border-radius: 10px; margin-top: 30px;">
                     <h1 style="font-size: 15px; color: black; margin-top: -25px; ">Telephone</h1>
-                    <input id="telephoneInp" type="text" style="outline: none; border: none; width: 370px; height: 47px; background-color: transparent; font-size: 20px; margin-left: 10px;">
+                    <input id="telephoneInp" type="text" style="outline: none; border: none; width: 270px; height: 47px; background-color: transparent; font-size: 20px; margin-left: 10px;">
                 </div>
             </div>
 
-            <div style="width: 370px; height: 100px; background-color: white; border: solid black; border-width: 1px; border-radius: 10px; margin-top: 40px;">
+            <div style="width: 300px; height: 100px; background-color: white; border: solid black; border-width: 1px; border-radius: 10px; margin-top: 40px;">
                 <h1 style="font-size: 15px; color: black; margin-top: -25px; ">Description</h1>
-                <textarea id="descriptionInp" cols="30" rows="10" style="outline: none; border: none; width: 370px; height: 97px; background-color: transparent; font-size: 20px; margin-left: 10px; margin-top: 0px;"></textarea>
+                <textarea id="descriptionInp" cols="30" rows="10" style="outline: none; border: none; width: 270px; height: 97px; background-color: transparent; font-size: 20px; margin-left: 10px; margin-top: 0px;"></textarea>
 
             </div>
 
@@ -217,7 +217,7 @@
 
             <div style="display: flex; flex-direction: row; margin-top: -5px;">
                 <img src="Assets/gmailIcon.png"  style="width: 45px; height: 50px; margin-top: 10px; margin-left: 11px;">
-                <h1 style="font-size: 20px; color: #005BAA; margin-top: 24px; margin-left: 10px;">E-mail: sadaqahwelfaretrust@outlook.com</h1>
+                <h1 style="font-size: 20px; color: #005BAA; margin-top: 24px; margin-left: 10px; height: 100px; word-break:break-all;">E-mail: sadaqahwelfaretrust@outlook.com</h1>
             </div>
 
             <div style="display: flex; flex-direction: row; margin-top: -5px;">
@@ -293,6 +293,24 @@
     {
         document.getElementById('contactForms').style.display = "none"
         document.getElementById('contactForms-2').style.display = "block"
+    }
+
+    if(window.innerWidth < 500)
+    {
+        document.getElementById('bgTxtBorder').style.display = "none"
+        document.getElementById('contactForms-2').style.width = "300px"
+        // // widthL: 300px for froms 2
+
+        // const newFormWidth = '200px'
+
+        // document.getElementById('nameInp-2').style.width = newFormWidth
+        // document.getElementById('surnameInp-2').style.width = newFormWidth
+        // document.getElementById('emialInp-2').style.width = newFormWidth
+        // document.getElementById('telephoneInp-2').style.width = newFormWidth
+        // document.getElementById('descriptionInp-2').style.width = newFormWidth
+
+        document.getElementById('gofundmeLogo').style.display = "none"
+
     }
     
     if(window.innerWidth < 600)
