@@ -41,7 +41,7 @@
         </div>
 
         <div id="subtitle" style="width: 300px; height: 40px; background-color: white; margin-top: 20px; margin-left: 20px; border-radius: 10px; display: flex; justify-content: center;">
-            <h1 class="boldTxt" style="color: #005BAA; margin-left: 15px; margin-right: 15px; font-size: 16px; margin-top: 12px;">HUMANITY IS ABOVE ALL THINGS</h1>
+            <h1 class="boldTxt" style="color: black; margin-left: 15px; margin-right: 15px; font-size: 16px; margin-top: 12px;">HUMANITY IS ABOVE ALL THINGS</h1>
         </div>
 
         <div onclick="openMenu()" id="menuIcon" style="position: absolute; top: 20px; right: 10px; width: 40px; height: 40px; background-color: white; display: none; flex-direction: column; border-radius: 3px;">
@@ -208,7 +208,7 @@
                 </div>
 
                 <div style="display: flex; justify-content: center; align-items: center; height: 100px;">
-                    <div style="border: solid black; width: 80%; height: 340px; margin-top: 350px;">
+                    <div id="rozgarBorder" style="border: solid black; width: 80%; height: 340px; margin-top: 350px;">
                         <h1 style="color: black; height: 420px; font-size: 20px; text-align: center; margin-top: 20px;">
 
                             <div style="display: flex; justify-content: center;">
@@ -218,22 +218,35 @@
 
                             </div>
 
-                            <div style="margin-top: 50px; margin-left: 20px; position: absolute; text-align: start;">
-                                Painter’s / Carpenter’s Tools: <br>
-                                Providing a Sewing Machine: <br>
-                                Tea Stall: £300 <br>
-                                Setting up a Mobile Stall: <br>
-                                Providing a Rickshaw  :  <br>
-                                Setting a small Local Shop: <br>
+                            <div id="bigRozgar">
+                                <div style="margin-top: 50px; margin-left: 20px; position: absolute; text-align: start;">
+                                    Painter’s / Carpenter’s Tools: <br>
+                                    Providing a Sewing Machine: <br>
+                                    Tea Stall: <br>
+                                    Setting up a Mobile Stall: <br>
+                                    Providing a Rickshaw  :  <br>
+                                    Setting a small Local Shop: <br>
+                                </div>
+    
+                                <div style="margin-top: 50px; position: absolute; text-align: end; width: 79%;">
+                                    £100 <br>
+                                    £200 <br>
+                                    £300 <br>
+                                    £500 <br>
+                                    £1,800 <br>
+                                    £2,000 <br>
+                                </div>
                             </div>
 
-                            <div style="margin-top: 50px; margin-right: 120px; position: absolute; text-align: end; width: 80%;">
-                                £100 <br>
-                                £200 <br>
-                                £300 <br>
-                                £500 <br>
-                                £1,800 <br>
-                                £2,000 <br>
+                            <div id="smallRozgar" style="display: none;">
+                                <div style="margin-top: 50px; margin-left: 20px; position: absolute; text-align: start;">
+                                    Painter’s / Carpenter’s Tools: <br>£100<br>
+                                    Providing a Sewing Machine: <br> £200 <br>
+                                    Tea Stall: <br> £300 <br>
+                                    Setting up a Mobile Stall: <br> £500 <br>
+                                    Providing a Rickshaw  :  <br> £1,800 <br>
+                                    Setting a small Local Shop: <br> £2,000 <br>
+                                </div>
                             </div>
 
                         </h1>
@@ -445,6 +458,10 @@
         document.querySelectorAll('[id=ShowcaseImg]')[4].style.height = "900px"
         // document.querySelectorAll('[id=test]')
         // alert('worked')
+
+        document.getElementById('bigRozgar').style.display = "none"
+        document.getElementById('smallRozgar').style.display = "flex"
+        document.getElementById('rozgarBorder').style.height = "440px"
     }
 
     if(window.innerWidth < 1097)
@@ -492,6 +509,7 @@
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@350&display=swap');
     body{
         margin: 0px;
         background-repeat: repeat-y;
@@ -500,6 +518,10 @@
     }
     h1{
         font-family: 'Roboto', sans-serif;
+    }
+    .boldTxt{
+        font-family: 'Radio Canada', sans-serif;
+        color: black;
     }
     .unselectable {
         -moz-user-select: -moz-none;
