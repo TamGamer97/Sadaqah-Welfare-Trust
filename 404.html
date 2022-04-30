@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About us</title>
+    <title>Page Not Found</title>
     <link rel="icon" type="image/x-icon" href="/Assets/Logo.jpg">
 </head>
 <body id="body">
@@ -18,7 +18,7 @@
                 <h1 onclick=" location.href = '/' " style="color: #005BAA; text-align: center; font-size: 17px; margin-top: 5px; opacity: 1;">Home</h1>
             </div>
 
-            <div style="opacity: 1; background-color: white; width: 85px; height: 27px; margin-top: 24px; border-radius: 2px; margin-left: 10px; margin-right: 10px;">
+            <div style="opacity: 0.65; background-color: white; width: 85px; height: 27px; margin-top: 24px; border-radius: 2px; margin-left: 10px; margin-right: 10px;">
                 <h1 onclick=" location.href = '/aboutus' " style="color: #005BAA; text-align: center; font-size: 17px; margin-top: 5px; opacity: 1;">About us</h1>
             </div>
 
@@ -56,28 +56,32 @@
         <img id="logoImg" src="/Assets/swtTransparentBg.png" style="object-fit: contain; width: 250px; height: 250px; position: relative; top: 120px; border: none rgba(0, 0, 0, 0.6)  ">
     </div>
 
-    <div id="textPara" style="position: absolute; top: 240px; margin-left: 30px; width: 98%;">
-        <h1 style="font-size: 20px; color: #005BAA; padding-right: 20px;">
-            Sadaqah Welfare Trust (SWT) is a charity Organisation working in Birmingham West Midlands.
-            <br><br>
-            We strive to support some of the most desperate cases of poverty, in and around rural areas of Pakistan and the United Kingdom.
-            <br>
 
-            With more and more volunteers joining our team here and around the world, we are delighted to take on board some of the brightest, dedicated and skilful individuals who share the same passion in making a real difference to families.
+    
+    <div style="display: flex; justify-content: center;">
+        
+        <div style="position: absolute; top: 127px; width: 330px; height: 50px; background-color: #005BAA; border-radius: 20px; "></div>
+        <h1 style="position: absolute; top: 100px; font-size: 40px; color: white; font-weight: bold; ">Page Not Found</h1>
+    
+    </div>
+    
+    <div id="textPara" style="position: relative; top: 240px; display: flex; justify-content: center; width: 100%;">
+            <h1 style="font-size: 20px; color: #005BAA; text-align: center; padding: 20px;">
+                Sorry the page your looking for doesnt exist
+                <br><br>
+                The page may be in development or non existent
+                <br><br>
+                Click below to go back to "Home"
+    
+            </h1>
 
-            <br><br>
+    </div>
 
-            Charity always starts at home, so we have taken the approach to give back with anything and everything that supports the cause.
-
-            <br><br>
-
-            Jabir ibn Abdullah reported: <br>
-            The Messenger of Allah, peace and blessings be upon him, said, “Every good deed is charity. <br>
-            Verily, it is a good deed to meet your brother with a cheerful face, and to pour what is left from your bucket into the vessel of your brother.
-            <br><br>
-            Sunan al-Tirmidhī 
-
-        </h1>
+    <div style="display: flex; justify-content: center; gap: 40px; margin-top: 20px;">
+        <div onclick="location.href =  '/' " style="position: relative; top: 220px; width: 200px; height: 50px; background-color: #005BAA; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+            <h1 style="font-size: 20px; color: white; text-align: center;">Go Back to Home</h1>
+        </div>
+        
     </div>
 
   
@@ -88,7 +92,7 @@
 
         <h1 onclick=" location.href = '/' " style="text-align: center; color: white; font-size: 20px; position: relative; top: -30px; opacity: 1;">Home</h1>
 
-        <h1 onclick=" location.href = '/aboutus' " style="text-align: center; color: white; font-size: 20px; position: relative; top: -30px; opacity: 0.7;">About us</h1>
+        <h1 onclick=" location.href = '/aboutus' " style="text-align: center; color: white; font-size: 20px; position: relative; top: -30px; opacity: 1;">About us</h1>
 
         <h1 onclick=" location.href = '/contact' " style="text-align: center; color: white; font-size: 20px; position: relative; top: -30px; opacity: 1;">Contact</h1>
 
@@ -100,7 +104,7 @@
     
     </div>
 
-    <div id="footer" style="position: relative; top: 800px; background-color: #005BAA; height: 80px; width: 100vw">
+    <div id="footer" style="position: absolute; bottom: 0px;  background-color: #005BAA; height: 80px; width: 100vw">
         <div id="iconsDiv" style="display: flex; flex-direction: row; align-items: center; height: 80px; margin-left: 20px; gap: 7px">
 
             <img src="/Assets/ytIcon.png" width="30px;">
@@ -122,8 +126,6 @@
 </body>
 <script>
 
-    document.getElementById('footer').style.top = document.body.scrollHeight + 150+ "px"
-
 
     if(window.innerWidth < 100)
     {
@@ -134,6 +136,28 @@
         document.getElementById('menuIcon').style.display = "flex"
     }
 
+    
+    if(window.innerWidth < 960)
+    {
+        document.getElementById('logoImg').style.display = "none"
+    }
+
+
+    if(window.innerWidth < 500)
+    {
+        // // widthL: 300px for froms 2
+
+        // const newFormWidth = '200px'
+
+        // document.getElementById('nameInp-2').style.width = newFormWidth
+        // document.getElementById('surnameInp-2').style.width = newFormWidth
+        // document.getElementById('emialInp-2').style.width = newFormWidth
+        // document.getElementById('telephoneInp-2').style.width = newFormWidth
+        // document.getElementById('descriptionInp-2').style.width = newFormWidth
+
+
+    }
+    
     if(window.innerWidth < 1097)
     {
         
@@ -147,11 +171,6 @@
         document.getElementById('footerTxt').style.display = "none"
         document.getElementById('iconsDiv').style.justifyContent = "center"
         document.getElementById('iconsDiv').style.marginLeft = "0px"
-    }
-
-    if(window.innerWidth < 1300)
-    {
-        document.getElementById('footer').style.bottom = "-40px"
     }
 
     function vhToPixels (vh) {
