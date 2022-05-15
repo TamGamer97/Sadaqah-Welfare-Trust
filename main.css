@@ -1,0 +1,5 @@
+.hoverAspect:hover {
+    cursor: pointer;
+    opacity: 0.8 !important;
+    background-color: red;
+}
