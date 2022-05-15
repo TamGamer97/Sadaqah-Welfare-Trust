@@ -1,0 +1,1 @@
+document.getElementById('boldTxt').style.fontSize = '15px'
